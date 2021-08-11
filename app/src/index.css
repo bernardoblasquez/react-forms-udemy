@@ -77,6 +77,11 @@ button:hover,
 button:active {
   background-color: #33059e;
   border-color: #33059e;
+} 
+
+button:disabled{
+  background-color: #cccccc;
+  border-color: #cccccc;
 }
 
 .form-actions {
