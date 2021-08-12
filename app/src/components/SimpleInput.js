@@ -12,8 +12,7 @@ const SimpleInput = (props) => {
 
    const [enteredEmail, setEnteredEmail] = useState('');
    const [enteredEmailWasTouched, setEnteredEmailWasTouched] = useState(false);
-   const enteredEmailPatternIsValid = regex.test(enteredEmail)
-   const enteredEmailIsValid = (enteredEmail.trim() !== '') && (enteredEmailPatternIsValid);
+   const enteredEmailIsValid = regex.test(enteredEmail); // alreay verifies if it is empty or not
    const emailInputIsInvalid  = !enteredEmailIsValid && enteredEmailWasTouched;
    
 
